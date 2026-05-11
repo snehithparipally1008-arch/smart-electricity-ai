@@ -1,0 +1,15 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #020917;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Remove default number input spinners in Firefox */
+input[type="number"] {
+  appearance: textfield;
+}
