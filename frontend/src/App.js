@@ -192,7 +192,6 @@ function LandingPage({ onLogin }) {
     }, 1200);
   };
 
-  const letters = "SMART ELECTRICITY PREDICTOR".split("");
 
   return (
     <div style={{ minHeight: "100vh", background: "rgb(2,8,20)", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily: "'Segoe UI',sans-serif" }}>
