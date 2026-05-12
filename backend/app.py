@@ -17,8 +17,13 @@ def home():
     return "Backend is running successfully!"
 
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST', 'OPTIONS'])
 def predict():
+
+    if request.method == 'OPTIONS':
+        return jsonify({'status': 'ok'})
+
+    data = request.json
 
     data = request.json
 
