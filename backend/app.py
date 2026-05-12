@@ -5,7 +5,7 @@ import pandas as pd
 
 app = Flask(__name__)
 
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Load trained model and encoder
 model = joblib.load('electricity_model.pkl')
